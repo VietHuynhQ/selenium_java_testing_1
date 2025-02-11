@@ -67,7 +67,7 @@ public class Topic_02_Selenium_Locator {
     }
     @Test
     public void TC_7_Css() {
-driver.findElement(By.cssSelector("input#Company"));
+        driver.findElement(By.cssSelector("input#Company"));
         driver.findElement(By.cssSelector("#Company"));
         driver.findElement(By.cssSelector("input[id='Company']"));
     }

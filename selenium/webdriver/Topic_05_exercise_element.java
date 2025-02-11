@@ -6,18 +6,21 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_00_Template {
+import java.time.Duration;
+
+public class Topic_05_exercise_element {
     WebDriver driver;
 // 1
     @BeforeClass
     public void initialBrowser() {
         driver = new FirefoxDriver();
-        driver.get("https://demo.nopcommerce.com");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
     }
 // 2
     @Test
-        public void TC_1_() {
-
+        public void TC_1_isDisplayed() {
+        driver.get("https://automationfc.github.io/basic-form/index.html");
         }
     @Test
     public void TC_2_() {
