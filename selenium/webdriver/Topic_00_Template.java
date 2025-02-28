@@ -1,20 +1,25 @@
 package webdriver;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class Topic_00_Template {
     WebDriver driver;
-// 1
+    JavascriptExecutor jsExecutor;
     @BeforeClass
     public void initialBrowser() {
         driver = new FirefoxDriver();
-        driver.get("https://demo.nopcommerce.com");
+        jsExecutor = (JavascriptExecutor) driver;
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().window().maximize();
     }
-// 2
+
     @Test
         public void TC_1_() {
 
