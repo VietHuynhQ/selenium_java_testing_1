@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="selenium-java-testing" level="project" />
+    <orderEntry type="library" name="fastjson" level="project" />
   </component>
 </module>

@@ -49,10 +49,9 @@ public class Topic_24_Shadow_DOM {
 
         }
     @Test
-    public void TC_2_Book() {
+    public void TC_2_Book() throws InterruptedException {
         driver.get("https://books-pwakit.appspot.com/");
-
-
+        Thread.sleep(5);
 
         WebElement firstShadowElement =  driver.findElement(By.cssSelector("book-app[apptitle='BOOKS']"));
         SearchContext firstShadowHost = firstShadowElement.getShadowRoot();

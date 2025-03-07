@@ -31,7 +31,7 @@ public class Topic_25_JavascriptExcutor {
 
        // Click vào 1 element nó chẳng quan tâm ẩn / hiện
         // Sai hành vi của End User => Giả lập lại hành vi của End User đang thao tác
-               jsExecutor.executeScript("",driver.findElement(By.cssSelector("ul.top-menu.notmobile a[href='/desktops']")));
+        jsExecutor.executeScript("",driver.findElement(By.cssSelector("ul.top-menu.notmobile a[href='/desktops']")));
 
         emailTextbox.sendKeys("automation@gmail.com");
 
